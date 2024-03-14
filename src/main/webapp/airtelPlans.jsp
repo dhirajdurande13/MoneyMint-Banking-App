@@ -214,15 +214,15 @@ footer p{
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="Home.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index1.jsp">Home</a>
               </li>
              
              
               <li class="nav-item">
-                 <a class="nav-link" href="DisplayController">About</a>
+                 <a class="nav-link" href="about.jsp">About</a>
               </li>
               <li class="nav-item">
-                 <a class="nav-link" href="DisplayController">Contact</a>
+                 <a class="nav-link" href="contact.jsp">Contact</a>
               </li>
                <li class="nav-item">
                  <a class="nav-link" href="Dashboard1.jsp">DashBoard</a>
@@ -461,8 +461,8 @@ footer p{
        
         <!-- copyright symbol -->
         <div class="f-info-links">
-            <a href="/privacy">privacy</a>
-            <a href="/terms">terms</a>
+            <a href="about.jsp">privacy</a>
+            <a href="about.jsp">terms</a>
         </div>
     </div>
     </footer>

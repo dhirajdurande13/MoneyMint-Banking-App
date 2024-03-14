@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoneyMint</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,12 +13,12 @@
     crossorigin="anonymous" />
     <style>
          body{
-      /* background-color: transparent; */
-      /*background-image:url("./BankLogin.png");*/
+      background-color: transparent; 
+     /* background-image:url("./bank1.png");
 		height: 90vh;
         width: 100vw; 
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-size: cover; */
    }
    
    /* logo css */
@@ -45,7 +45,6 @@
    }
    .navbar-nav li a{
     color: #5099dd;;
-   
     
    }
    .navbar-nav li button{
@@ -65,7 +64,7 @@
    
    }
    .navbar-nav li .btnSignup{
-   margin-left:10em;
+    margin-left: 10em;
     margin-right: -25px;
    
    }
@@ -75,141 +74,30 @@
     color: #427eb6 !important;
    }
    
-    /* .table{
-    border:1px solid black !important;
- 
-      
-      padding:1px 1px 1px 1px;
-      margin-top:3%;
-      border-radius:30px;
-      
-       
-    } */
-    /* content */
-    .content{
-        margin-right: 0px;
-        margin-left: 55%;
-        margin-top: 8%;
-    }
-    .content h1{
-       font-family: sans-serif;
-       font-size: 50px;
-       line-height: 65px;
-       color: #1860a3 
-       
-    }
-    .content p{
-        color: #124777;
-       font-size: large;
-       line-height: 25px;
-       
-    }
-    /* content button */
-    .content button{
-        margin-top: 10%;
-        height: 3em;
-        width: 19em;
-        background-color: #5099dd;
-   color: white;
-   font-weight: bold;
-   font-size: large;
-    }
-    .content button:hover{
-        margin-top: 10%;
-        height: 3em;
-        width: 19em;
-        background-color: white;
-  
-   border: 2px solid #5099dd;
-   color: #5099dd;
-   font-weight: bold;
-    }
-    
-    nav{
-		height: 5em;
-	}
-	
-	.img img{
-	margin-left:5%;
-	
-	margin-top:0px;
-	height:580px;
-	width:580px;
-	}
-	
-	/* form login*/
+    /* form login*/
 	.main{
-		display:flex;
+		 display: flex;
+  align-items: center;
+  justify-content: center;
+   color: #124777;
+       font-size: 17px;
+       line-height: 25px;
 	}
 	.form{
     	border:1px solid #5099dd;
     	box-shadow:5px 5px 18px #5099dd;
-    	height:400px;
-    	width:40%;
-    	margin-left:6%;
+    	height:820px;
+    	width:55%;
     	margin-top:3%;
+    	margin-bottom:1%;
     	 border-radius:10px;
     	
     }
-    .tab tr{
-    	margin-bottom:15px;
-    }
-    .input{
-    margin-top: 10px;
-    border-radius: 3px;
-    border:1px solid #5099dd;
-    margin-left:10px;
-    width: 100%;
-  padding: 8px 15px;
-  margin: 8px 0;
-  display: inline-block;
-  box-sizing: border-box;
-    }
-    .form h2{
-    margin-bottom: 6%;
-    }
-    .form label{
-    margin-top:4%;
-    }
-    
-    
-    .input:focus{
-    margin-top: 10px;
-    border-radius: 3px;
-     
-    outline: 1px solid #5099dd;
-    padding: 8px 15px;
-  margin: 8px 0;
-  display: inline-block;
-  box-sizing: border-box;
-    }
-    
-    /* form button*/ 
-     .submit{
-    height: 2.5em;
-    width: 6em;
-   background-color: #5099dd;
-   color: white;
-   font-weight: bold;
-   border:none;
-   border-radius:5px;
-   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   margin-top:15%;
-  
-   }
-   .submit:hover{
-    height: 2.5em;
-    width: 6em;
-    font-weight: bold;
-   border: 2px solid #5099dd;
-   color: #5099dd;
-   background-color:#fff;
-  
-   
-   
-   }
+    nav{
+		height: 5em;
+	}
 	footer {
-		position: fixed;
+		position:relative;
     background-color: #b0c0d3;
     color: black;
     text-align: center;
@@ -234,21 +122,6 @@ footer p{
    
 </head>
 <body>
-<script>
-  function preventForward() {
-    window.history.forward(); // Move the browser backward in its history
-  }
-
-  setTimeout(preventForward, 0); // Call preventForward immediately after a delay of 0 milliseconds
-  
-  window.onunload = function() {
-    // Override the default behavior of the onunload event
-    // by assigning it a function that does nothing
-    null;
-  };
-</script>
-	
-
     <nav class="navbar navbar-expand-md bg-body-secondary">
         <div class="container-fluid">
             <img src="./BankLogo.png" alt="error">
@@ -281,49 +154,33 @@ footer p{
         </div>
       </nav>
       <main class="main">
-      <div class="img">
-    <img src="./Login.jpg" alt="">
-  </div>
-       
-         <div class="form"> 
+       <div class="form"> 
    <div class="row mt-4">
    <div class="col-8 offset-2">
-   <h2 class="text" onclick="preventBack()">Login Here!</h2>
-    <form action="LoginController">
-  <table>
- 	
-     <label for="username">Enter Username</label>
-     
-  	<input type="email" id="username" name="username" class="input" required>
-	 
-	     <label for="password">Enter Password </label>
-  	<input type="password" id="password" name="password" class="input" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  required>
-   
-      
-     <tr>
-	    
-	     <td><input type="submit" value="Login" class="submit"></td>
-	    
-	     
-	     
-	     
-     </tr>
-  
-     
-     
-    
-    </table>
-   
-     <div style="color: #FF0000;">${errorMessage}</div><br>
-     
-    
+   		<h3>Welcome to MoneyMint!</h3>
+   		<p>At MoneyMint, we are committed to providing you with a seamless and secure banking experience tailored to your needs. Whether you're managing your finances, making transactions, or staying connected with loved ones, our comprehensive suite of features empowers you to take control of your financial life effortlessly.</p>
+   			<b>Features : </b>
+   			<ul>
+   				<li><b>Signup/Login : </b>Easily create an account or securely log in to your existing account to access our banking services.</li>
+   				<li><b>Add Money : </b>Seamlessly deposit funds into your account, ensuring your money is always within reach when you need it.</li>
+   				<li><b>Withdraw Money : </b> Withdraw funds from your account quickly and securely, giving you the flexibility to access your money whenever necessary.</li>
+   				<li><b>Check Balance : </b> Stay informed about your account balance , empowering you to make informed financial decisions.</li>
+   				<li><b>Recharge for Phone : </b> Conveniently recharge your mobile phone with prepaid plans from three leading operators: Jio, Vi, and Airtel. Explore a range of recharge options and stay connected with your loved ones effortlessly.</li>
+   			</ul>
+   			
+   			
+   			<b>Getting started today: </b>
+   			<p>Join the MoneyMint <a href="contact.jsp">community</a> today and experience the future of banking. Whether you're managing your finances, making transactions, or staying connected with loved ones, we're here to support you every step of the way.
 
-    </form>
-      
-     </div>
-        </div>
-          </div>
-          
+
+
+   			</p>
+   			<br>
+   			<p>Thank you for choosing MoneyMint for your banking needs. We look forward to serving you!</p>
+   </div>
+   </div>
+   </div>
+        
       </main>
        <footer>
         <p>&copy; 2023 Bank</p>

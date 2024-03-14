@@ -97,6 +97,7 @@
   margin: 6px 0;
   display: inline-block;
   box-sizing: border-box;
+  width:150%;
     }
     
     .input:focus{
@@ -170,15 +171,15 @@ footer p{
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="Home.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index1.jsp">Home</a>
               </li>
              
              
               <li class="nav-item">
-                 <a class="nav-link" href="DisplayController">About</a>
+                 <a class="nav-link" href="about.jsp">About</a>
               </li>
               <li class="nav-item">
-                 <a class="nav-link" href="DisplayController">Contact</a>
+                 <a class="nav-link" href="contact.jsp">Contact</a>
               </li>
               <li class="nav-item">
 					<a href="signupView.jsp" class="btnSignup"><button type="button" class="btn">SignUp</button></a>
@@ -197,36 +198,39 @@ footer p{
       <main>
         <div class="form"> 
    <div class="row mt-3">
-   <div class="col-8 offset-2">
+   <div class="col-8 offset-1">
    <h2 class="text">Create new account!</h2>
-           <form action="RegisterViewController" >
+           <form  action="RegisterViewController">
   <table class="tab mt-4">
      
      <tr>
      
-         <td>Enter Register No</td>
-	     <td><input type="number" name="regNo" class="input" required></td>
+         <td>Enter Account No</td>
+	     <td><input type="number" name="regNo" class="input" required min="1300000" max="1400000" placeholder="13XXXXX" ></td>
 	    
      </tr>
     
       <tr>
 	     <td>Enter Customer Name</td>
-	     <td> <input type="text" name="custName" class="input" required></td>
+	     <td> <input type="text" name="custName" class="input" onkeydown="return /[a-z," "]/i.test(event.key)" placeholder="Type letters only" required></td>
      </tr>
     
      <tr>
-	     <td>Enter username</td>
-	     <td><input type="text" name="username" class="input" required></td>
+	     <td>Enter Email</td>
+	     <td><input type="email" name="username" class="input" required></td>
      </tr>
     
       <tr>
 	     <td>Enter Password</td>
-	     <td> <input type="password" name="password" class="input" required></td>
+	     <td> <input type="password" name="password" class="input" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></td>
      </tr>
     
     <tr>
 	     <td>Enter Balance</td>
-	     <td><input type="text" name="accBal" class="input" required></td>
+	     <td><input type="number" name="accBal" class="input" min="999"   required>
+	     
+	     </td>
+	     
      </tr>
     
      <tr>
@@ -237,19 +241,7 @@ footer p{
    
     </table>
     </form>
-         <%! String str=""; %>
-    <%  
-       if(!session.isNew())
-       {
-    	   String str=(String)session.getAttribute("result");
-    	  %>
-    	  
-    	 <p><%=str %></p>
-    	  
-    	  <% 
-       }
-        session.invalidate();
-       %>
+         
     </div>
     </div>
      </div>
@@ -265,8 +257,8 @@ footer p{
        
         <!-- copyright symbol -->
         <div class="f-info-links">
-            <a href="/privacy">privacy</a>
-            <a href="/terms">terms</a>
+            <a href="about.jsp">privacy</a>
+            <a href="about.jsp">terms</a>
         </div>
     </div>
     </footer>
@@ -277,4 +269,5 @@ footer p{
 
 
 </body>
+	
 </html>

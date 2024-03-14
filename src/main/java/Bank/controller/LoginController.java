@@ -51,7 +51,7 @@ public class LoginController extends HttpServlet {
 		     }else {
 		    	 str="Invalid Details!";
 					session.setAttribute("result", str);
-		    	 response.sendRedirect("LoginView.jsp");
+		    	 response.sendRedirect("error.jsp");
 		     }
 	}
 

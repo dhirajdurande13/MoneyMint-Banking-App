@@ -55,7 +55,7 @@ public class RegisterViewController extends HttpServlet {
 		}else {
 	    	 str="Invalid Details!";
 				session.setAttribute("result", str);
-	    	 response.sendRedirect("RegisterView.jsp");
+	    	 response.sendRedirect("error.jsp");
 	     }
 	}
 

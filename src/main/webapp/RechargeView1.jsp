@@ -189,7 +189,7 @@
 	
    
 	footer {
-		position:relative;
+		position:absolute;
     background-color: #b0c0d3;
     color: black;
     text-align: center;
@@ -227,15 +227,15 @@ String userId = request.getParameter("userId");
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="Home.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index1.jsp">Home</a>
               </li>
              
              
               <li class="nav-item">
-                 <a class="nav-link" href="DisplayController">About</a>
+                 <a class="nav-link" href="about.jsp">About</a>
               </li>
               <li class="nav-item">
-                 <a class="nav-link" href="DisplayController">Contact</a>
+                 <a class="nav-link" href="contact.jsp">Contact</a>
               </li>
                <li class="nav-item">
                  <a class="nav-link" href="Dashboard1.jsp">DashBoard</a>
@@ -276,7 +276,7 @@ String userId = request.getParameter("userId");
   	<input type="text" id="username" name="username" class="input" required value="<%= userId %>">
 	 
 	     <label for="password">Enter Password </label>
-  	<input type="password" id="password" name="password" class="input" required>
+  	<input type="password" id="password" name="password" class="input" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
   	<label for="regNo">Enter Mobile No</label>
      
   	<input type="number" id="mobile" name="mobile" required
@@ -284,6 +284,7 @@ String userId = request.getParameter("userId");
   	 <label for="exampleInputPassword1" class="form-label" name="operator">Operator</label>
             <select type="text"
               class="form-control input"
+              
               id="operator"
               name="operator"
               required 
@@ -335,8 +336,8 @@ String userId = request.getParameter("userId");
        
         <!-- copyright symbol -->
         <div class="f-info-links">
-            <a href="/privacy">privacy</a>
-            <a href="/terms">terms</a>
+            <a href="about.jsp">privacy</a>
+            <a href="about.jsp">terms</a>
         </div>
     </div>
     </footer>

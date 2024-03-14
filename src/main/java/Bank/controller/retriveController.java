@@ -40,7 +40,7 @@ public class retriveController extends HttpServlet {
 		 List<Register> lst=regdao.retrive(username,password);
 		 HttpSession session=request.getSession();
 		 String str;
-		 
+		 System.out.println("Outside"+username);
 		 if(lst!=null)
 		 {
 			 session.setAttribute("data",lst);
@@ -48,8 +48,9 @@ public class retriveController extends HttpServlet {
 //			 response.sendRedirect("checkBalanceView.jsp");
 		 }
 		 else {
-				str="Invalid Details!";
-				session.setAttribute("result", str);
+			 System.out.println(username);
+			 session.setAttribute("data",username);
+				
 				response.sendRedirect("checkBalanceView.jsp");
 			}
 //		 else {
