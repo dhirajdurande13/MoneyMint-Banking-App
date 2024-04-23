@@ -17,7 +17,7 @@ Scalability: The application is designed for scalability to accommodate growing 
 Clone the repository to your local machine.
 bash
 Copy code
-git clone:[ https://github.com/yourusername/banking-app.git](https://github.com/dhirajdurande13/MoneyMint-Banking-App)
+git clone:(https://github.com/dhirajdurande13/MoneyMint-Banking-App)
 Deploy to Tomcat: Deploy the project to a Tomcat server.
 Database Setup: Configure the database connection settings in the config.properties file.
 Run the Application: Start the Tomcat server and access the application through the browser.
